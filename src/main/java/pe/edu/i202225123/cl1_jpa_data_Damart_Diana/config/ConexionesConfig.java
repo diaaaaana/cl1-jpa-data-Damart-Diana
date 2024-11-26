@@ -40,10 +40,10 @@ public class ConexionesConfig {
          * - ConnectionTimeout: Tiempo máximo de espera
          *      para conectarse a la BD.
          */
-        config.setMaximumPoolSize(30); // cantidad de personas que se conectan al mismo tiempo
-        config.setMinimumIdle(4); //inactivos
-        config.setIdleTimeout(240000); // 4 minutos en milisegundosw
-        config.setConnectionTimeout(45000); //tiempo de conexion 45 segundos
+        config.setMaximumPoolSize(30);
+        config.setMinimumIdle(4);
+        config.setIdleTimeout(240000);
+        config.setConnectionTimeout(45000);
 
         System.out.println("###### HikariCP initialized ######");
         return new HikariDataSource(config);
